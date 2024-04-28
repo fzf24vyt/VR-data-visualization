@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Bar Chart</title>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <style>
+        body {
+            background-color: #f0f0f0; /* Dimmed background color */
+            margin: 0;
+            overflow: hidden; /* Hide scrollbars */
+        }
+    </style>
+</head>
+<body>
+    <a-scene background="color: light green">
+        <!-- Axes -->
+        <a-entity position="-7 -7 -15">
+            <a-entity line="start: 0 0 0; end: 15 0 0; color: #000000"></a-entity>
+            <a-entity line="start: 0 0 0; end: 0 15 0; color: #000000"></a-entity>
+            <a-entity line="start: 0 0 0; end: 0 0 15; color: #000000"></a-entity>
+            <a-text value="Salary" position="16 0 0" color="#000000" scale="9 9 9"></a-text>
+            <a-text value="Years" position="0 27 0" color="#000000" scale="9 9 9"></a-text>
+            <a-text value="Hours" position="0 0 16" color="#000000" scale="9 9 9"></a-text>
+            <a-text value="3 years" position="2 17 0" color="#000000" scale="3 3 3"></a-text>
+             <a-text value="2 years" position="4 15 0" color="#000000" scale="3 3 3"></a-text>
+             <a-text value="5 years" position="6 24 0" color="#000000" scale="3 3 3"></a-text>
+            <a-text value="7 years" position="8 25 0" color="#000000" scale="3 3 3"></a-text>
+            <a-text value="3.5years" position="10 22 0" color="#000000" scale="3 3 3"></a-text>
+            <a-text value="25 years" position="12 27 0" color="#000000" scale="3 3 3"></a-text>
+            <a-text value="2 hours" position="-2 0 2" color="#000000" scale="3 3 3"></a-text>
+            <a-text value="8 hours" position="-2 0 8" color="#000000" scale="3 3 3"></a-text>
+        </a-entity>
+
+        <!-- Bars -->
+        <a-entity position="-7 -7 -15">
+            <!-- Bar 1 -->
+            <a-entity position="4 7 0">
+                <a-box width="1" height="14" depth="2" color="green"></a-box>
+                <a-text value="$400" position="0 16 0" color="blue" align="center" scale="5 5 5"></a-text>
+
+            </a-entity>
+            <!-- Bar 2 -->
+            <a-entity position="6 6 0">
+                <a-box width="1" height="12" depth="2" color="red"></a-box>
+                <a-text value="$350" position="0 18 2" color="blue" align="center" scale="5 5 5"></a-text>
+
+            </a-entity>
+            <!-- Bar 3 -->
+            <a-entity position="8 11 0">
+                <a-box width="1" height="22" depth="2" color="grey"></a-box>
+                <a-text value="$600" position="0 23 4" color="blue" align="center" scale="5 5 5"></a-text>
+
+            </a-entity>
+            <!-- Bar 4 -->
+            <a-entity position="10 8 0">
+                <a-box width="1" height="16" depth="2" color="orange"></a-box>
+                <a-text value="$450" position="0 19 3.5" color="blue" align="center" scale="5 5 5"></a-text>
+
+            </a-entity>
+            <!-- Bar 5 -->
+            <a-entity position="12 13 0">
+                <a-box width="1" height="26" depth="2" color="blue"></a-box>
+                <a-text value="$700" position="0 28 3" color="blue" align="center" scale="5 5 5"></a-text>
+
+            </a-entity>
+            <!-- Bar 6 -->
+            <a-entity position="14 10 0">
+                <a-box width="1" height="20" depth="2" color="yellow"></a-box>
+                <a-text value="$500" position="-5 16 0" color="blue" align="center" scale="5 5 5"></a-text>
+
+            </a-entity>
+        </a-entity>
+    </a-scene>
+</body>
+</html>
+
